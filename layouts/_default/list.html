@@ -1,6 +1,7 @@
 {{define "main"}}
 <div class="list">
-  HomePage
-  <a href="/">Hello</a>
+  {{range .Paginator.Pages}}
+  <div class="listItem"></div>
+  {{end}}
 </div>
 {{end }}
