@@ -31,6 +31,10 @@ a {
   justify-content: space-between;
 }
 
+.listItem {
+  color: chartreuse;
+}
+
 /* NAVBAR START */
 
 .navbar {

@@ -1,7 +1,17 @@
-{{define "main"}}
+{{ define "main" }}
 <div class="list">
-  {{range .Paginator.Pages}}
-  <div class="listItem"></div>
-  {{end}}
+  {{ range .Paginator.Pages }}
+  <img
+    src="{{ .Params.image}}"
+    alt="{{.Title}}"
+    class="listItemImage"
+    loading="lazy"
+  />
+  <div class="listItemTexts">
+    <h1>
+      <a href="{{.Permalink}}">{{.Title}}</a>
+    </h1>
+  </div>
+  {{ end }}
 </div>
-{{end }}
+{{ end }}
