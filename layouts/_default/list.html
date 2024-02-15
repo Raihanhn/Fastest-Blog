@@ -8,9 +8,15 @@
     loading="lazy"
   />
   <div class="listItemTexts">
-    <h1>
+    <h1 class="listItemTitle">
       <a href="{{.Permalink}}">{{.Title}}</a>
     </h1>
+    <p class="listItemDesc">{{.Params.description}}</p>
+    <div class="listItemDetail">
+      <img src="{{.Params.avatar}}" loading="lazy" alt="" />
+      <span></span>
+      <time>{{.Date}}</time>
+    </div>
   </div>
   {{ end }}
 </div>
