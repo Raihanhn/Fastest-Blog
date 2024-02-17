@@ -4,3 +4,7 @@ title = 'My New Blog'
 
 [params]
   dateFormat = "Jan 2, 2006"
+
+[taxonomies]
+ category = "categories"
+ author = "authors"

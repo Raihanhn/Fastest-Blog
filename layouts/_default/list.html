@@ -20,13 +20,17 @@
           alt=""
           class="listItemAvatar"
         />
-        <span></span>
+        <span
+          >{{range (.GetTerms "authors")}}
+          <a href="{{.Permalink}}">{{.Name}} </a>
+          {{end}}
+        </span>
         <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
       </div>
       <div class="listItemCategories">
-        <a href="/" class="listItemCategory">Music </a>
-        <a href="/" class="listItemCategory">Music </a>
-        <a href="/" class="listItemCategory">Music </a>
+        {{ range (.GetTerms "categories") }}
+        <a href="{{.Permalink}}" class="listItemCategory"> {{.Name}} </a>
+        {{end}}
       </div>
     </div>
   </div>

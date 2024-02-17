@@ -5,8 +5,8 @@ draft = false
 description = "This is a Desc"
 image = "/images/goat.webp"
 imageBig = "/images/goat.webp"
-categories = ["general", "life", "music"]
-authors = ["Lama Dev"]
+categories = ["general", "travel", "culture"]
+authors = ["Jenny mia"]
 avatar = "/images/pp.webp"
 +++
 
