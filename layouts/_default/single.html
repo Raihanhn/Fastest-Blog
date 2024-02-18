@@ -1,3 +1,25 @@
 {{define "main"}}
-<div class="single">Single page</div>
+<div class="single">
+  <div class="singleHead">
+    <div class="singleHeadTexts">
+      <h1 class="singleHeadTitle">{{.Title}}</h1>
+      <p class="singleHeadDesc">{{.Params.description}}</p>
+      <div class="singleHeadDetail">
+        <img
+          src="{{.Params.avatar}}"
+          loading="lazy"
+          alt=""
+          class="singleAvatar"
+        />
+        <span
+          >{{range (.GetTerms "authors")}}
+          <a href="{{.Permalink}}">{{.Name}} </a>
+          {{end}}
+        </span>
+      </div>
+    </div>
+    <img src="{{.Params.imageBig}}" alt="{{.Title}}" />
+  </div>
+  <div class="singleBottom"></div>
+</div>
 {{end}}
