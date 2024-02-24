@@ -331,6 +331,10 @@ a {
   .listItemImage {
     display: none;
   }
+
+  .searchButton span {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {

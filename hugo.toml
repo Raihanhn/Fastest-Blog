@@ -2,6 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Blog'
 
+paginate = 2
+
 [params]
   dateFormat = "Jan 2, 2006"
 
