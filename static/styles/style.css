@@ -178,6 +178,26 @@ a {
   margin-bottom: 30px;
 }
 
+.page-item {
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.page-item.active {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.page-item.disabled {
+  background-color: #313845;
+  cursor: not-allowed;
+}
+
 /* LIST END*/
 
 /* SINGLE START */
