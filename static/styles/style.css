@@ -167,6 +167,17 @@ a {
   font-size: 14px;
 }
 
+.pagination {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
 /* LIST END*/
 
 /* SINGLE START */
