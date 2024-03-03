@@ -1,2 +1,2 @@
 It's a Hugo Markdown project.
-To run the hugo server run - hugo server -D
+To run the hugo server go to cmd & run - hugo server -D
